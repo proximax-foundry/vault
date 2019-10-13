@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="shadow-pane" fx:id="shadowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1200.0" stylesheets="@../css/Light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane id="main-pane" fx:id="mainPane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <center>       
+                <SplitPane dividerPositions="0.8" orientation="VERTICAL">
+                    <items>         
+                        <SplitPane dividerPositions="0.16">
+                            <items>     
+                                <TreeView fx:id="groupTree">                                    
+                                </TreeView>                   
+                                <AnchorPane>
+                                    <children>                                        
+                                        <TableView id="table-entry" fx:id="tableEntry" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <placeholder>
+                                                <Label text="" />
+                                            </placeholder>
+                                            <columns>                                               
+                                            </columns>
+                                        </TableView>                                                               
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                        <AnchorPane style="-fx-background-color: white;">
+                            <children>
+                                <JFXTextArea fx:id="statusText" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </center>
+            <top>
+                <HBox id="header" alignment="CENTER_LEFT" prefHeight="43.0" BorderPane.alignment="CENTER">
+                    <children>                    
+                        <HBox id="header-logo" alignment="CENTER" spacing="10.0">
+                            <children>                                        
+                                <ImageView id="app-icon1" fitHeight="28.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </HBox>
+                        <BorderPane HBox.hgrow="ALWAYS">
+                            <top>
+                                <HBox alignment="TOP_RIGHT">
+                                    <children>                                        
+                                        <JFXButton graphicTextGap="0.0" onAction="#minimizeBtn" prefHeight="25.0" prefWidth="23.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="min-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton graphicTextGap="0.0" onAction="#maximizeBtn" prefHeight="25.0" prefWidth="23.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="max-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>                                                                        
+                                        <JFXButton graphicTextGap="0.0" onAction="#closeBtn" prefHeight="17.0" prefWidth="32.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="close-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </HBox>
+                            </top>                        
+                        </BorderPane>
+                    </children>
+                </HBox>
+            </top>
+            <left>
+                <GridPane id="left-toolbar" prefWidth="40.0">
+                    <columnConstraints>
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" />
+                        <RowConstraints minHeight="10.0" />
+                        <RowConstraints minHeight="10.0" />                        
+                        <RowConstraints minHeight="10.0" />
+                    </rowConstraints>                            
+                    <children>                                
+                        <JFXButton onAction="#showProfile" text=" " GridPane.rowIndex="0">
+                            <graphic>
+                                <ImageView id="userprofile-img" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />                                    
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="uploadBtn" onAction="#uploadDB" text=" " GridPane.rowIndex="1">
+                            <graphic>
+                                <ImageView id="upload-img" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />                                    
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="downloadBtn" onAction="#downloadDB" text=" " GridPane.rowIndex="2">
+                            <graphic>
+                                <ImageView id="download-img" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />                                    
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="saveBtn" onAction="#saveFile" text=" " GridPane.rowIndex="3">
+                            <graphic>
+                                <ImageView id="savefile-img" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />                                    
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="filterBtn" onAction="#filterBtn" text=" " GridPane.rowIndex="4">
+                            <graphic>
+                                <ImageView id="viewcolumn-img" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />                                    
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </GridPane>                
+            </left>
+            <bottom>                
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

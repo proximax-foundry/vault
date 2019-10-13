@@ -1,0 +1,469 @@
+#shadow-pane
+{
+    -fx-background-color: transparent;    
+}
+#main-pane
+{
+    -fx-background-color: #D6E1E9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);    
+}
+#login-line
+{
+    -fx-background-color: white;
+}
+#app-logo1
+{
+    -fx-image: url("Light/img/proxivaultb.png");    
+}
+#app-logo2
+{
+    -fx-image: url("Light/img/proxivaultw.png");    
+}
+#app-icon1
+{
+    -fx-image: url("Light/img/vaultw.png");    
+}
+#app-icon2
+{
+    -fx-image: url("Light/img/vaultb.png");    
+}
+#searchw-img
+{
+    -fx-image: url("Light/img/search-w.png");    
+}
+
+#main-navbar
+{
+    -fx-background-color:#f5a503;
+}
+#output-report
+{
+    -fx-background-color:#20b5ac;
+    -fx-padding:10px;
+    -fx-border-color:#e9e9e9;
+}
+#menu-item:hover
+{
+    -fx-background-color:#20b5ac;
+}
+#label13
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:#193549;    
+}
+#label14wb
+{
+    -fx-font:14px "Lato Regular"; 
+    -fx-text-fill:white;
+    -fx-font-weight:bold;    
+}
+#label15wb
+{
+    -fx-font:15px "Lato Bold"; 
+    -fx-text-fill:white;
+    -fx-font-weight:bold;    
+}
+#label18wb
+{
+    -fx-font:18px "Lato Bold"; 
+    -fx-text-fill:white;
+    -fx-font-weight:bold;    
+}
+#label15bb
+{
+    -fx-font:15px "Lato Regular"; 
+    -fx-text-fill:#193549;
+    -fx-font-weight:bold;    
+}
+#label20b
+{
+    -fx-font:20px "Lato Black";    
+    -fx-text-fill:#193549;
+    -fx-font-weight:bold;
+}
+#label13
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:#193549;    	    
+}
+#profile-fields
+{
+    -fx-background-color:#FFFFFF;
+    -fx-font:15px "Lato Regular";
+    -fx-text-fill: #193549;	
+    -fx-padding: 4px;
+}
+#profile-pane
+{
+    -fx-border-color: #326B91;
+}
+#header
+{
+    -fx-background-color: #326B91;
+}
+#clipboard-img
+{
+    -fx-image: url("Light/img/clipboard.png");    
+}
+#close-img
+{
+    -fx-image: url("Light/img/close.png");    
+}
+#min-img
+{
+    -fx-image: url("Light/img/minimize.png");    
+}
+#max-img
+{
+    -fx-image: url("Light/img/maximize.png");    
+}
+#savefile-img
+{
+    -fx-image: url("Light/img/savefile.png");    
+}
+
+#viewcolumn-img
+{
+    -fx-image: url("Light/img/viewcolumn.png");    
+}
+
+#userprofile-img
+{
+    -fx-image: url("Light/img/userprofile.png");    
+}
+#entryplus-img
+{
+    -fx-image: url("Light/img/entryplus.png");
+}
+#entryedit-img
+{
+    -fx-image: url("Light/img/entryedit.png");
+}
+#groupplus-img
+{
+    -fx-image: url("Light/img/groupplus.png");
+}
+#groupedit-img
+{
+    -fx-image: url("Light/img/groupedit.png");
+}
+#upload-img
+{
+    -fx-image: url("Light/img/upload.png");
+}
+#download-img
+{
+    -fx-image: url("Light/img/download.png");
+}
+#entry-img
+{
+    -fx-image: url("/icons/0.png");
+}
+#group-img
+{
+    -fx-image: url("/icons/48.png");
+}
+#password-img
+{
+    -fx-image: url("Light/img/password.png");
+}
+#repeat-img
+{
+    -fx-image: url("Light/img/repeat.png");
+}
+#key-img
+{
+    -fx-image: url("Light/img/key.png");
+}
+#browse-img
+{
+    -fx-image: url("Light/img/browse.png");
+}
+#proximax-logo
+{
+    -fx-image: url("Light/img/ProximaX-Logo.png")
+}
+#more-img
+{
+    -fx-image: url("Light/img/more.png")
+}
+#view-img
+{
+    -fx-image: url("Light/img/view.png")
+}
+#network-img
+{
+    -fx-image: url("Light/img/network.png")
+}
+#hide-img
+{
+    -fx-image: url("Light/img/hide.png")
+}
+#add-img
+{
+    -fx-image: url("Light/img/add.png")
+}
+#remove-img
+{
+    -fx-image: url("Light/img/remove.png")
+}
+#up-img
+{
+    -fx-image: url("Light/img/up.png")
+}
+#error-img
+{
+    -fx-image: url("Light/img/error.png")
+}
+#netcfg-img
+{
+    -fx-image: url("Light/img/netcfg.png")
+}
+#expiry-img
+{
+    -fx-image: url("Light/img/expiry.png")
+}
+#left-toolbar
+{    
+    -fx-background-color: #414042;
+    -fx-vgap: 20;
+    -fx-padding: 10 0 0 0;
+}
+#header-logo 
+{
+    -fx-padding: 0 0 0 10;
+}
+#bottom
+{
+    -fx-background-color: #e6e7e8;
+}
+#main-top
+{
+    -fx-background-color: #414042;
+    -fx-padding: 0 0 0 10;
+}
+#main-center
+{
+    -fx-background-color: white;
+    -fx-border-color: #193549;
+    -fx-padding: 10 10 10 10;
+}
+#img-btn
+{
+    -fx-background-color:#326B91;
+    -fx-padding: 0 0 0 6;
+}
+#gridview-btn
+{
+    -fx-background-color:transparent;    
+}
+#gridview-btn:selected
+{
+    -fx-background-color:#0096c9;    
+}
+#entry-field
+{
+    -fx-background-color: #d6e1e9;
+    -fx-font:15px "Lato";
+    -fx-padding: 0 0 0 10;
+}
+#nodes-list
+{
+    -fx-background-color: #d6e1e9;
+}
+#nodes-list .list-view 
+{
+    -fx-background-color: #d6e1e9;
+}
+#nodes-list .list-cell 
+{ 
+    -fx-background-color: #d6e1e9;
+    -fx-font:15px "Lato";
+}
+#nodes-list .list-cell:filled:selected {
+    -fx-background-color: #0096c9;
+    -fx-font:15px "Lato";
+    -fx-text-fill: white; /* 5 */
+}
+#nav-btn
+{
+    -fx-background-color:#326B91;
+    -fx-text-fill:white;    
+    -fx-font:15px "Lato Bold"; 
+    -fx-font-weight:bold;    
+}
+#nav-btn:selected
+{
+    -fx-background-color: #8cacc1;
+}
+.status-bar 
+{
+    -fx-padding: 4px;
+    -fx-pref-height: 43px;
+    -fx-background-color: #e6e7e8;
+    -fx-body-color:#e6e7e8;
+    -fx-background-insets: 0, 1;
+}
+.status-bar > .center-items,
+.status-bar > .left-items,
+.status-bar > .right-items 
+{
+    -fx-alignment: center; 
+}
+.status-label 
+{
+    -fx-font:15px "Lato";
+    -fx-text-fill: #193549;	
+}
+.status-combox 
+{
+    -fx-font:15px "Lato";
+    -jfx-focus-color: #e6e7e8;
+    -jfx-unfocus-color: #e6e7e8;	
+}
+.status-combox > .cell
+{
+    -fx-font:15px "Lato";
+    -fx-text-fill: #193549;	
+}
+.status-combox > .list-view > .list-cell
+{
+    -fx-font:15px "Lato";
+}
+.status-green 
+{
+    -fx-graphic: url("Light/img/green.png")
+}
+.status-red 
+{
+    -fx-graphic: url("Light/img/red.png")
+}
+#tab-pane
+{    
+    -fx-text-fill: #193549;	
+}
+#tab-pane *.tab-header-area *.tab-header-background {
+    -fx-background-color:transparent;    
+}
+#tab-pane .tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #193549;    
+    -fx-background-color: #e6e7e8;    
+}
+#tab-pane .tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-background-color:#326B91 ;
+}
+#login-account
+{
+    -fx-background-color:#ffffff;
+    -fx-font:15px "Lato";
+    -fx-padding: 4px;
+}
+#error-lbl
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:red;  
+}
+#error-title
+{
+    -fx-font:20px "Lato Black";    
+    -fx-text-fill:#193549;
+    -fx-font-weight:bold;
+}
+#error-msg
+{
+    -fx-font:15px "Lato Regular"; 
+    -fx-text-fill:#193549;    	 
+    -fx-padding: 0 40 0 40;
+}
+.tree-view, .tree-cell {    
+    -fx-text-fill: #193549 ;
+    -fx-font:15px "Lato Regular"; 
+}
+.context-menu {
+    -fx-background-position: left;
+    -fx-background-repeat: no-repeat;
+}
+.context-menu .menu-item {
+    -fx-background-position: left;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 5 5 5 5;
+    -fx-font:15px "Lato Regular"; 
+
+}
+#editgroup
+{ 
+    -fx-image: url("Light/img/editgroup.png");     
+}
+#delgroup
+{     
+    -fx-image: url("Light/img/delgroup.png");     
+}
+#addgroup
+{ 
+    -fx-image: url("Light/img/addgroup.png");     
+}
+#addentry
+{ 
+    -fx-image: url("Light/img/addentry.png");
+}
+#editentry
+{ 
+    -fx-image: url("Light/img/editentry.png");
+}
+#delentry
+{ 
+    -fx-image: url("Light/img/delentry.png");
+}
+#dupentry
+{ 
+    -fx-image: url("Light/img/dupentry.png");
+}
+#dupgroup
+{ 
+    -fx-image: url("Light/img/dupgroup.png");
+}
+#cpusername
+{ 
+    -fx-image: url("Light/img/cpusername.png");
+}
+#cppassword
+{ 
+    -fx-image: url("Light/img/cppassword.png");
+}
+#view-btn
+{
+    -fx-background-color:#326B91;
+    -fx-text-fill:white;    
+    -fx-font:15px "Lato Bold"; 
+    -fx-font-weight:bold;    
+    /*-fx-graphic: url("Light/img/view.png") */
+    -fx-background-image: url(Light/img/view.png);
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#view-btn:selected
+{ 
+    /* -fx-graphic: url("Light/img/hide.png") */
+    -fx-background-image: url(Light/img/hide.png);
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.table-view 
+{    
+    -fx-font:16px "Lato Regular";            
+}
+
+#chromeEntry{
+	 -fx-image: url("Light/img/chrome.png");
+}
+#firefoxEntry{
+	 -fx-image: url("Light/img/firefox.png");
+}
+#internetExplorerEntry{
+	-fx-image: url("Light/img/internetexplorer.png");
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="shadow-pane" fx:id="shadowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="680.0" stylesheets="@../css/Light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane id="main-pane" fx:id="mainPane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <center>                
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0">
+                    <children>
+                        <BorderPane id="main-top" prefHeight="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <left>
+                                <ImageView fx:id="iconImv" id="entryplus-img" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />                                    
+                            </left>                                
+                            <center>
+                                <Pane>
+                                    <children>                                        
+                                        <Label id="label18wb" fx:id="titleLbl" layoutX="10.0" layoutY="20.0" text="ADD ENTRY" />
+                                    </children>
+                                </Pane>
+                            </center>                            
+                        </BorderPane>
+                        <GridPane id="main-center" hgap="10.0" vgap="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.0" minWidth="10.0" prefWidth="449.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="40.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                            </rowConstraints>                        
+                            <children>
+                                <Label id="label15bb" prefHeight="30.0" text="TITLE" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <JFXTextField fx:id="titleField" id="entry-field"  prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />                                
+                                <Label id="label15bb" prefHeight="30.0" text="ICON " GridPane.columnIndex="0" GridPane.rowIndex="1" />                                
+                                <Button fx:id="iconBtn" id="icon-btn" onAction="#iconPicker" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <graphic>
+                                        <ImageView id="entry-img" fitHeight="20.0" fitWidth="20.0" />
+                                    </graphic>
+                                </Button>
+                                <Label id="label15bb" layoutX="33.0" layoutY="50.0" text="USERNAME" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <JFXTextField fx:id="usernameField" id="entry-field"  prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />                                
+                                <Label id="label15bb" prefHeight="30.0" text="PASSWORD" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                <JFXPasswordField fx:id="passwordField" id="entry-field" layoutX="142.0" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <JFXTextField id="entry-field" fx:id="passField" prefHeight="30.0" promptText="   Password" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <ToggleButton id="view-btn" fx:id="viewBtn" text="" prefHeight="30.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                    <graphic>
+                                        <ImageView id="view-img" fitHeight="20.0" fitWidth="20.0" />
+                                    </graphic>
+                                </ToggleButton>                                
+                                <Label id="label15bb" prefHeight="30.0" text="REPEAT" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                <JFXPasswordField fx:id="repeatField" id="entry-field" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />                                
+                                <JFXButton id="img-btn" onAction="#generateBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" text=" " GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                    <graphic>
+                                        <ImageView id="repeat-img" fitHeight="20.0" fitWidth="20.0" />
+                                    </graphic>
+                                </JFXButton>                                
+                                <Label id="label15bb" prefHeight="30.0" text="QUALITY" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                                <ProgressBar fx:id="qualityProgress" prefHeight="30.0" prefWidth="455.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />                                
+                                <Label id="label15bb" prefHeight="30.0" text="URL" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                                <JFXTextField fx:id="urlField" id="entry-field" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                <Label id="label15bb" prefHeight="30.0" text="NOTES" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                                <JFXTextArea fx:id="notesArea" id="entry-field" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.rowSpan="2" />                                
+                                <CheckBox fx:id="expiryCheck" id="label15bb" mnemonicParsing="false" prefHeight="30.0" text="EXPIRES" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                                <HBox spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="9"> 
+                                    <children>
+                                        <JFXDatePicker id="entry-field" fx:id="expiryDate" editable="false" prefHeight="30.0" prefWidth="220.0" />
+                                        <JFXTimePicker id="entry-field" fx:id="expiryTime" editable="false" prefHeight="30.0" prefWidth="220.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </GridPane>
+                    </children>
+                </AnchorPane>                           
+            </center>            
+            <top>            
+                <HBox id="header" alignment="CENTER_LEFT" prefHeight="43.0" BorderPane.alignment="CENTER">
+                    <children>                    
+                        <HBox id="header-logo" alignment="CENTER" spacing="10.0">
+                            <children>                                        
+                                <ImageView id="app-icon1" fitHeight="28.0" pickOnBounds="true" preserveRatio="true" />                                
+                            </children>
+                        </HBox>
+                        <BorderPane HBox.hgrow="ALWAYS">
+                            <top>
+                                <HBox alignment="TOP_RIGHT">
+                                    <children>                                        
+                                        <JFXButton graphicTextGap="0.0" onAction="#closeBtn" prefHeight="17.0" prefWidth="32.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="close-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </HBox>
+                            </top>                        
+                        </BorderPane>
+                    </children>
+                </HBox>
+            </top>
+            <bottom>
+                <Pane prefHeight="63.0" prefWidth="600.0">
+                    <children>
+                        <JFXButton id="nav-btn" layoutX="440.0" layoutY="20.0" onAction="#saveBtn" prefWidth="100.0" text="OK" />                            
+                        <JFXButton id="nav-btn" layoutX="550.0" layoutY="20.0" onAction="#closeBtn" prefWidth="100.0" text="CANCEL" />
+                        <JFXButton visible="false" id="nav-btn" layoutX="20.0" layoutY="20.0" prefWidth="100.0" text="TOOLS" />                            
+                    </children>
+                </Pane>
+            </bottom>
+        </BorderPane>    
+    </children>
+</AnchorPane>

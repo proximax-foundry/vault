@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane id="main-pane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">    
+	<center>                
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="431.0">
+			<children>
+				<BorderPane id="main-top" prefHeight="97.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<left>
+						<ImageView fx:id="iconImv" id="groupplus-img" fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />                                    
+					</left>                                
+					<center>
+						<Pane>
+							<children>                                        
+								<Label id="label18wb" fx:id="titleLbl" layoutX="10.0" layoutY="20.0" text="ADD GROUP" />
+								<Label id="label15wb" fx:id="descLbl" layoutX="10.0" layoutY="50.0" text="Create a New Group" />
+							</children>
+						</Pane>
+					</center>                            
+				</BorderPane>                        
+				<GridPane id="main-center" hgap="10.0" vgap="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0">
+					<columnConstraints>
+						<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="106.0" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="452.0" />                                
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+					</rowConstraints>
+					<children>
+						<Label id="label15bb" text="NAME" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+						<JFXTextField id="entry-field" fx:id="nameField" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+						<Label id="label15bb" prefHeight="30.0" text="ICON" GridPane.columnIndex="0" GridPane.rowIndex="1" />                                
+						<Button id="icon-btn" fx:id="iconBtn" onAction="#iconPicker" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="1">
+							<graphic>
+								<ImageView id="group-img" fitHeight="20.0" fitWidth="20.0" />
+							</graphic>
+						</Button>                                
+						<Label id="label15bb" prefHeight="30.0" text="NOTES" GridPane.columnIndex="0" GridPane.rowIndex="2" />                                
+						<JFXTextArea id="entry-field" fx:id="notesArea" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2" />                                
+						<CheckBox id="label15bb" fx:id="expireCheck" mnemonicParsing="false" prefHeight="30.0" text="EXPIRES" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+						<HBox spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4"> 
+							<children>
+								<JFXDatePicker id="entry-field" fx:id="expiryDate" editable="false" prefHeight="30.0" prefWidth="220.0" />
+								<JFXTimePicker id="entry-field" fx:id="expiryTime" editable="false" prefHeight="30.0" prefWidth="220.0" />
+							</children>
+						</HBox>
+					</children>
+				</GridPane>
+			</children>
+		</AnchorPane>                           
+	</center>            
+	<top>            
+		<HBox id="header" alignment="CENTER_LEFT" prefHeight="43.0" BorderPane.alignment="CENTER">
+			<children>                    
+				<ImageView id="app-icon1" fitHeight="28.0" pickOnBounds="true" preserveRatio="true" />
+			</children>
+		</HBox>
+	</top>
+	<bottom>
+		<Pane layoutX="4.0" layoutY="578.0" prefHeight="63.0" prefWidth="600.0">
+			<children>
+				<JFXButton id="nav-btn" layoutX="400.0" layoutY="20.0" onAction="#saveBtn" prefWidth="100.0" text="OK" />                            
+				<JFXButton id="nav-btn" layoutX="510.0" layoutY="20.0" onAction="#closeBtn" prefWidth="100.0" text="CANCEL" />                        
+			</children>
+		</Pane>
+	</bottom>
+</BorderPane>    

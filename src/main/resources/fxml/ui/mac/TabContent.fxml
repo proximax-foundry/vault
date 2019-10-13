@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView>
+    <columns>
+        <TableColumn prefWidth="75.0" text="Title" />
+        <TableColumn prefWidth="140.0" text="User Name" />
+        <TableColumn prefWidth="116.0" text="Password" />
+        <TableColumn prefWidth="51.0" text="URL" />
+        <TableColumn prefWidth="110.0" text="Notes" />
+    </columns>
+</TableView>

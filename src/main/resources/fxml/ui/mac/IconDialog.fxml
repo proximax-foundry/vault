@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.GridView?>
+
+<BorderPane id="main-pane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="570.0" stylesheets="@../css/Light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<VBox BorderPane.alignment="CENTER">
+			<children>    
+				<BorderPane>                            
+					<center>
+						<ScrollPane hbarPolicy="NEVER" pannable="true" vbarPolicy="NEVER">
+							<content>
+								<GridView fx:id="standardLv" prefHeight="200.0" prefWidth="550.0" BorderPane.alignment="CENTER" />
+							</content>
+						</ScrollPane>
+					</center>
+					<top>
+						<JFXRadioButton fx:id="standardChk" id="label15bb" prefHeight="30.0" text="Use standard icon"  onAction="#checkStandardIcon" >                                    
+							<toggleGroup>
+								<ToggleGroup fx:id="toggleCheck"/>
+							</toggleGroup>
+						</JFXRadioButton>
+					</top>
+					<padding>
+						<Insets left="5.0" right="5.0" />
+					</padding>
+				</BorderPane>
+				<BorderPane>
+					<top>
+						<JFXRadioButton toggleGroup="$toggleCheck" fx:id="customChk" id="label15bb" prefHeight="30.0" text="Use custom icon" onAction="#checkCustomIcon" />
+					</top>                            
+					<center>
+						<ScrollPane hbarPolicy="NEVER" pannable="true" vbarPolicy="NEVER">
+							<content>
+								<GridView fx:id="customLv" prefHeight="200.0" prefWidth="420.0" BorderPane.alignment="CENTER" />
+							</content>
+						</ScrollPane>                                
+					</center>
+					<right>
+						<VBox spacing="20.0">
+							<children>
+								<JFXButton fx:id="btnAdd" onAction="#addBtn" id="nav-btn" prefHeight="40.0" prefWidth="120.0" text="Add" />                        
+								<JFXButton fx:id="btnRemove" onAction="#removeBtn" id="nav-btn" prefHeight="40.0" prefWidth="120.0" text="Remove" />                       
+							</children>
+							<padding>
+								<Insets left="5.0" />
+							</padding>
+						</VBox>
+					</right>
+					<padding>
+						<Insets left="5.0" right="5.0" />
+					</padding>
+				</BorderPane>
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		<HBox id="login-footer" alignment="CENTER_RIGHT" prefHeight="60.0" spacing="20.0">
+			<children>
+				<JFXButton id="nav-btn" onAction="#saveBtn" prefHeight="40.0" prefWidth="120.0" text="OK" />                        
+				<JFXButton id="nav-btn" onAction="#closeBtn" prefHeight="40.0" prefWidth="120.0" text="CANCEL" />                       
+			</children>
+			<padding>
+				<Insets right="5.0" />
+			</padding>
+		</HBox>        
+	</bottom>        
+	<top>            
+		<HBox id="header" alignment="CENTER_LEFT" prefHeight="43.0" BorderPane.alignment="CENTER">
+			<children>  
+				<ImageView id="app-icon1" fitHeight="28.0" pickOnBounds="true" preserveRatio="true" />
+			</children>
+		</HBox>
+	</top>    
+</BorderPane>        

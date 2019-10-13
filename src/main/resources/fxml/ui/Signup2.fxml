@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="shadow-pane" fx:id="shadowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane id="main-pane" fx:id="mainPane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <AnchorPane AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>            
+                        <Pane id="header" prefHeight="40.0" prefWidth="634.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView id="app-icon1" fitHeight="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />                     
+                            </children>
+                        </Pane>
+                        <Label id="label20b" text="SECURE QUESTIONS" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="45.0" />               
+                        <VBox id="profile-pane" layoutX="29.0" layoutY="105.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+                            <children>
+                                <Label id="label13b" text="EMAIL" />
+                                <JFXTextField id="profile-fields" fx:id="emailField" prefHeight="40.0" />
+                                <Label id="label13b" text="QUESTION 1" />
+                                <JFXComboBox id="profile-fields" fx:id="question1Cbx" prefHeight="40.0" prefWidth="560.0" promptText=" Select your question">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">                                                
+                                        </FXCollections>
+                                    </items>               
+                                </JFXComboBox>
+                                <Label id="label13b" text="ANSWER 1" />
+                                <JFXTextField id="profile-fields" fx:id="answer1Field" prefHeight="40.0" />
+                                <Label id="label13b" text="QUESTION 2" />
+                                <JFXComboBox id="profile-fields" fx:id="question2Cbx" prefHeight="40.0" prefWidth="560.0" promptText=" Select your question">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">                                                
+                                        </FXCollections>
+                                    </items>               
+                                </JFXComboBox>
+                                <Label id="label13b" text="ANSWER 2" />
+                                <JFXTextField id="profile-fields" fx:id="answer2Field" prefHeight="40.0" />
+                                <Label id="label13b" text="QUESTION 3" />
+                                <JFXComboBox id="profile-fields" fx:id="question3Cbx" prefHeight="40.0" prefWidth="560.0" promptText=" Select your question">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">                                                
+                                        </FXCollections>
+                                    </items>               
+                                </JFXComboBox>
+                                <Label id="label13b" text="ANSWER 3" />
+                                <JFXTextField id="profile-fields" fx:id="answer3Field" prefHeight="40.0" />
+                                <Label id="error-lbl" fx:id="errorLbl" prefHeight="20.0" prefWidth="560.0" text=" " />
+                            </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                        </VBox>                        
+                        <JFXButton id="nav-btn" fx:id="saveBtn" layoutX="308.0" onAction="#saveBtn" prefHeight="38.0" prefWidth="137.0" text="SAVE" AnchorPane.bottomAnchor="0.0" />
+                        <JFXButton id="nav-btn" layoutX="458.0" onAction="#closeBtn" prefHeight="38.0" prefWidth="137.0" text="CLOSE" AnchorPane.bottomAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
